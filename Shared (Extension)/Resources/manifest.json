@@ -20,8 +20,9 @@
     },
 
     "content_scripts": [{
+        "run_at": "document_start",
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": ["<all_urls>"]
     }],
 
     "action": {
